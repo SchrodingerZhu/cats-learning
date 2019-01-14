@@ -1,4 +1,5 @@
-import PrintableSyntax._
+
+
 object PrintableInstances {
   implicit val stringPrintable: Printable[String] =
     new Printable[String] {
@@ -14,11 +15,11 @@ object PrintableInstances {
     new Printable[Cat] {
       override def format(value: Cat): String = {
         Printable.format(value.name) +
-        " is a " +
-        Printable.format(value.age) +
-        " year-old " +
-        Printable.format(value.color) +
-        " cat."
+          " is a " +
+          Printable.format(value.age) +
+          " year-old " +
+          Printable.format(value.color) +
+          " cat."
       }
     }
 }

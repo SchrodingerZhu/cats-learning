@@ -1,9 +1,10 @@
+import java.util.Date
+
+import CustomShowInstances._
 import cats.Show
 import cats.instances.int._
 import cats.instances.string._
 import cats.syntax.show._
-import CustomShowInstances._
-import java.util.Date
 
 object MeetCats extends App {
   val showInt = Show.apply[Int]

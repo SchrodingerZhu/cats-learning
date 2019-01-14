@@ -4,6 +4,7 @@ import cats.instances.int._
 import cats.instances.option._
 import cats.syntax.eq._
 import cats.syntax.option._
+
 object EqRunner extends App {
   val eqInt = Eq[Int]
   val testDate1 = new java.util.Date()

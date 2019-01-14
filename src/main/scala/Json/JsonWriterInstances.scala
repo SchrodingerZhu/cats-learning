@@ -1,6 +1,5 @@
 import JsonSyntax._
 
-import scala.reflect.{ClassTag, classTag}
 object JsonWriterInstances {
   implicit val stringWriter: JsonWriter[String] =
     new JsonWriter[String] {

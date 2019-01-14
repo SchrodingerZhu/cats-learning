@@ -1,8 +1,10 @@
 import java.util.Date
+
 import cats.Show
 import cats.instances.int._
 import cats.instances.string._
 import cats.syntax.all._
+
 object CustomShowInstances {
   //Method One
   implicit val dateShow: Show[Date] =
