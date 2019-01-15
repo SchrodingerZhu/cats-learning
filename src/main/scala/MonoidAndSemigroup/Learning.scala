@@ -22,6 +22,8 @@ object MonoidInstances {
     }
 }
 
+import MonoidInstances._
+
 object Learning extends App {
   val intSetMonoid = Monoid[Set[Int]]
   println(intSetMonoid.combine(Set(1, 2), Set(2, 5)))
