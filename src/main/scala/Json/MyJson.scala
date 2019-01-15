@@ -1,6 +1,6 @@
 sealed trait MyJson
 
-trait JsonWriter[A] {
+trait JsonWriter[-A] {
   def write(value: A): MyJson
 }
 
