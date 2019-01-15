@@ -4,8 +4,8 @@ import JsonWriterInstances._
 import scala.language.implicitConversions
 
 object JsonRunner extends App {
-  println(MyJson.toJson("Kivi has a lot of girls."))
-  val x = Person("Kivi", "Kivi@程序媛.中文")
+  println(MyJson.toJson("Kivi is currently single."))
+  val x = Person("Kivi", "Kivi@程序员.中文")
   println(x.toJson)
   val y = Account(123456, x)
   println(y.toJson)
