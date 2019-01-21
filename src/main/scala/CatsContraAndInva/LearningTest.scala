@@ -12,6 +12,7 @@ object LearningTest extends App{
 //    contramap(stringShow)((sym: Symbol) => s"'${sym.name}")
 
   val symbolShow = stringShow.contramap[Symbol](_.name)
+
   println(symbolShow.show('Cat))
 
   implicit val symbolMonoid: Monoid[Symbol] =
