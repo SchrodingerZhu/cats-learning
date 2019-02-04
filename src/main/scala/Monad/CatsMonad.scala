@@ -1,4 +1,4 @@
-package Monad
+package MonadTest
 import cats.Monad
 import cats.instances.option._
 import cats.instances.list._

@@ -1,7 +1,6 @@
 import cats.instances.function._
 import cats.syntax.functor._
 import cats.Functor
-import com.sun.source.doctree.TextTree
 import BinaryTree._
 object Test {
   def callByName(i : => Int) =
